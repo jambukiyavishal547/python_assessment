@@ -1,0 +1,84 @@
+2023-07-06 12:22:28,412 - INFO - ********** press 1 for counsellor **********
+2023-07-06 12:22:28,413 - INFO - ********** press 2 for faculty    **********
+2023-07-06 12:22:28,413 - INFO - ********** press 3 for student    **********
+2023-07-06 12:22:28,414 - INFO - ********** press 4 for Exit       **********
+2023-07-06 12:22:31,526 - INFO - 1. add student
+2023-07-06 12:22:31,527 - INFO - 2. Remove student
+2023-07-06 12:22:31,527 - INFO - 3. View All student
+2023-07-06 12:22:31,527 - INFO - 4. View Specific Student
+2023-07-06 12:23:01,761 - INFO - Student data entered successfully.
+2023-07-06 12:23:02,967 - INFO - ********** press 1 for counsellor **********
+2023-07-06 12:23:02,968 - INFO - ********** press 2 for faculty    **********
+2023-07-06 12:23:02,968 - INFO - ********** press 3 for student    **********
+2023-07-06 12:23:02,968 - INFO - ********** press 4 for Exit       **********
+2023-07-06 12:23:04,821 - INFO - 1. add student
+2023-07-06 12:23:04,821 - INFO - 2. Remove student
+2023-07-06 12:23:04,821 - INFO - 3. View All student
+2023-07-06 12:23:04,821 - INFO - 4. View Specific Student
+2023-07-06 12:23:05,868 - INFO - View all student data
+2023-07-06 12:23:05,869 - INFO - {101: {'fname': 'vishal', 'lname': 'jambukiya', 'contact': 90, 'subjects': {'pyhton': {'marks': 99, 'fees': 90000}, 'java': {'marks': 99, 'fees': 90000}}, 'faculty': 'jigar sir'}}
+2023-07-06 12:23:58,828 - INFO - ********** press 1 for counsellor **********
+2023-07-06 12:23:58,830 - INFO - ********** press 2 for faculty    **********
+2023-07-06 12:23:58,830 - INFO - ********** press 3 for student    **********
+2023-07-06 12:23:58,830 - INFO - ********** press 4 for Exit       **********
+2023-07-06 12:24:01,410 - INFO - 1. add student
+2023-07-06 12:24:01,411 - INFO - 2. Remove student
+2023-07-06 12:24:01,411 - INFO - 3. View All student
+2023-07-06 12:24:01,412 - INFO - 4. View Specific Student
+2023-07-06 12:24:29,346 - INFO - Student data entered successfully.
+2023-07-06 12:24:30,611 - INFO - ********** press 1 for counsellor **********
+2023-07-06 12:24:30,611 - INFO - ********** press 2 for faculty    **********
+2023-07-06 12:24:30,611 - INFO - ********** press 3 for student    **********
+2023-07-06 12:24:30,611 - INFO - ********** press 4 for Exit       **********
+2023-07-06 12:24:32,208 - INFO - 1. add student
+2023-07-06 12:24:32,209 - INFO - 2. Remove student
+2023-07-06 12:24:32,209 - INFO - 3. View All student
+2023-07-06 12:24:32,209 - INFO - 4. View Specific Student
+2023-07-06 12:24:33,946 - INFO - View all student data
+2023-07-06 12:24:33,946 - INFO - {101: {'fname': 'vishal', 'lname': 'jambukiya', 'contact': 99, 'subjects': {'j': {'marks': 99, 'fees': 90000}, 'p': {'marks': 99, 'fees': 99000}}, 'faculty': 'jigar sir'}}
+2023-07-06 12:24:37,910 - INFO - ********** press 1 for counsellor **********
+2023-07-06 12:24:37,911 - INFO - ********** press 2 for faculty    **********
+2023-07-06 12:24:37,911 - INFO - ********** press 3 for student    **********
+2023-07-06 12:24:37,911 - INFO - ********** press 4 for Exit       **********
+2023-07-06 12:24:41,003 - INFO - 1. add mark to student
+2023-07-06 12:24:41,004 - INFO - 2. View All student
+2023-07-06 12:24:42,891 - INFO - View all student data
+2023-07-06 12:24:42,892 - INFO - {101: {'fname': 'vishal', 'lname': 'jambukiya', 'contact': 99, 'subjects': {'j': {'marks': 99, 'fees': 90000}, 'p': {'marks': 99, 'fees': 99000}}, 'faculty': 'jigar sir'}}
+2023-07-06 12:24:45,627 - INFO - ********** press 1 for counsellor **********
+2023-07-06 12:24:45,627 - INFO - ********** press 2 for faculty    **********
+2023-07-06 12:24:45,628 - INFO - ********** press 3 for student    **********
+2023-07-06 12:24:45,628 - INFO - ********** press 4 for Exit       **********
+2023-07-06 12:24:48,673 - INFO - Enter your Serial Number to view your details
+2023-07-06 12:24:51,380 - INFO - {'fname': 'vishal', 'lname': 'jambukiya', 'contact': 99, 'subjects': {'j': {'marks': 99, 'fees': 90000}, 'p': {'marks': 99, 'fees': 99000}}, 'faculty': 'jigar sir'}
+2023-07-06 12:24:51,382 - INFO - For any other Quries Contact faculty
+2023-07-06 12:24:51,385 - INFO - ********** press 1 for counsellor **********
+2023-07-06 12:24:51,385 - INFO - ********** press 2 for faculty    **********
+2023-07-06 12:24:51,385 - INFO - ********** press 3 for student    **********
+2023-07-06 12:24:51,386 - INFO - ********** press 4 for Exit       **********
+2023-07-06 12:24:54,731 - INFO - 1. add student
+2023-07-06 12:24:54,732 - INFO - 2. Remove student
+2023-07-06 12:24:54,732 - INFO - 3. View All student
+2023-07-06 12:24:54,732 - INFO - 4. View Specific Student
+2023-07-06 12:24:57,113 - INFO - For Specifice Student Data:    
+2023-07-06 12:24:59,537 - INFO - {'fname': 'vishal', 'lname': 'jambukiya', 'contact': 99, 'subjects': {'j': {'marks': 99, 'fees': 90000}, 'p': {'marks': 99, 'fees': 99000}}, 'faculty': 'jigar sir'}
+2023-07-06 12:25:01,865 - INFO - ********** press 1 for counsellor **********
+2023-07-06 12:25:01,866 - INFO - ********** press 2 for faculty    **********
+2023-07-06 12:25:01,866 - INFO - ********** press 3 for student    **********
+2023-07-06 12:25:01,866 - INFO - ********** press 4 for Exit       **********
+2023-07-06 12:25:06,158 - INFO - Thank You For Using Our System 2023-07-06 12:41:52,765 - INFO - ********** press 1 for counsellor **********
+2023-07-06 12:41:52,767 - INFO - ********** press 2 for faculty    **********
+2023-07-06 12:41:52,767 - INFO - ********** press 3 for student    **********
+2023-07-06 12:41:52,767 - INFO - ********** press 4 for Exit       **********
+2023-07-06 12:42:25,718 - INFO - ********** press 1 for counsellor **********
+2023-07-06 12:42:25,719 - INFO - ********** press 2 for faculty    **********
+2023-07-06 12:42:25,719 - INFO - ********** press 3 for student    **********
+2023-07-06 12:42:25,720 - INFO - ********** press 4 for Exit       **********
+2023-07-06 12:42:32,860 - INFO - 1. add student
+2023-07-06 12:42:32,860 - INFO - 2. Remove student
+2023-07-06 12:42:32,860 - INFO - 3. View All student
+2023-07-06 12:42:32,861 - INFO - 4. View Specific Student
+2023-07-06 12:43:21,688 - INFO - Student data entered successfully.
+2023-07-06 12:43:25,030 - INFO - ********** press 1 for counsellor **********
+2023-07-06 12:43:25,031 - INFO - ********** press 2 for faculty    **********
+2023-07-06 12:43:25,031 - INFO - ********** press 3 for student    **********
+2023-07-06 12:43:25,031 - INFO - ********** press 4 for Exit       **********
