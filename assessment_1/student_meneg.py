@@ -10,6 +10,7 @@ op="y"
 def add_student(snumber,fname,lname,cno):
     if snumber in d: 
          logging.warning("The entered serial nmuber is already avaliable in the database")
+         print ("The entered serial nmuber is already avaliable in the database")
     else: 
         d[snumber] = {
          "fname": fname,
@@ -19,6 +20,7 @@ def add_student(snumber,fname,lname,cno):
          "faculty":faculty
         }
         logging.info("Student data entered successfully.")
+        print("Student data entered successfully.")
 #for remove student
 def remove_student(snumber):
     if snumber in d:
@@ -26,6 +28,7 @@ def remove_student(snumber):
         op=input("Do You Want To Delete Record?? (y/n)")
         if op=='y':                                  
          logging.info("student removed successfully")
+         print("student removed successfully")
     else:
         logging.warning("entered serial number doesnot exsist")
 
