@@ -1,0 +1,65 @@
+{% extends 'header.html' %}
+{% load static %}
+{% block content %}
+<!DOCTYPE html>
+<html>
+
+<head></head>
+
+<body class="sub_page">
+
+  <!-- contact section -->
+  <section class="contact_section layout_padding-bottom">
+    <div class="container">
+      <div class="heading_container">
+        <div style="margin-top: 50px;"><h2>Sing up</h2></div>
+      </div>
+      <div class="row">
+        <div class="col-md-7">
+          <div class="form_container">
+            <form action="">
+              <div>
+                <input type="text" name="fname" placeholder="First Name" />
+              </div>
+              <div>
+                <input type="text" name="lname" placeholder="Last Name" />
+              </div>
+              <div>
+                <input type="text" name="mobile" placeholder="Mobile" />
+              </div>
+              <div>
+                <input type="text" name="gender" placeholder="Gender" />
+              </div>
+              <div>
+                <input type="text" class="message-box" placeholder="Address" />
+              </div>
+              <div>
+                <input type="email" name="email" placeholder="Email" />
+              </div>
+              <div>
+                <input type="password" name="password" placeholder="Password" />
+              </div>
+              <div>
+                <input type="password" name="cpassword" placeholder="Comfirm Password" />
+              </div>
+              <div class="btn_box">
+                <button>
+                  Sing up
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="col-md-5">
+          <div class="img-box">
+            <img src="{% static 'images/treatment-side-img.jpg' %}" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end contact section -->
+</body>
+
+</html>
+{% endblock %}
