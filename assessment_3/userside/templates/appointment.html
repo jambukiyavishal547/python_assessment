@@ -1,0 +1,63 @@
+{% extends 'header.html' %}
+{% load static %}
+{% block content %}
+<!DOCTYPE html>
+<html>
+
+<head>
+</head>
+
+<body class="sub_page">
+  {% if msg %}
+    <b style=" color: darkred;">{{msg}}</b>
+  {% endif %}
+  <form method="POST" action="{% url 'appointment' %}">
+    {% csrf_token %}
+    <!-- book section -->
+  <section class="book_section layout_padding">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <form method="POST">
+            <h4>
+              BOOK <span>APPOINTMENT</span>
+            </h4>
+            <div class="form-row ">
+              <div class="form-group col-lg-4">
+                <label for="inputPatientName">Patient Name </label>
+                <input type="text" class="form-control" name="pname">
+              </div>
+              <div class="form-group col-lg-4">
+                <label for="inputPatientName">Doctor Name </label>
+                <input type="text" class="form-control" name="dname">
+              </div>
+            </div>
+            <div class="form-row ">
+              <div class="form-group col-lg-4">
+                <label for="inputPhone">Phone Number</label>
+                <input type="number" class="form-control" name="mobile" id="inputPhone" placeholder="XXXXXXXXXX">
+              </div>
+              <div class="form-group col-lg-4">
+                <label for="inputDate">Choose Date </label>
+                <div class="input-group date" data-date-format="dd-mm-yyyy">
+                  <input type="date" class="form-control" name="date">
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="btn-box">
+              <button type="submit" class="btn btn-info">Submit Now</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- end book section -->
+  </form>
+</body>
+
+</html>
+{% endblock %}

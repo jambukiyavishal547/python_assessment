@@ -7,22 +7,28 @@
 <head></head>
 
 <body class="sub_page">
-
+  <form method="POST" name="login" action="{% url 'login' %}" enctype="multipart/form-data">
+    {% csrf_token %}
   <!-- contact section -->
   <section class="contact_section layout_padding-bottom">
     <div class="container">
       <div class="heading_container">
-        <div style="margin-top: 50px;"><h2>Login</h2></div>
+        <div style="margin-top: 50px;"><h2>
+                Login In <span>Miro Hospital</span>
+              </h2></div>
       </div>
+      {% if msg %}
+          <b style=" color: darkred;">{{msg}}</b>
+      {% endif %}
       <div class="row">
         <div class="col-md-6">
           <div class="form_container">
-            <form action="">
+            <form action="{% url 'login' %}">
               <div>
-                <input type="email" placeholder="Email" />
+                <input type="email" name="email" placeholder="Email" />
               </div>
               <div>
-                <input type="password" placeholder="Password" />
+                <input type="password" name="password" placeholder="Password" />
               </div>
               <div class="btn_box">
                 <button>
@@ -41,6 +47,7 @@
     </div>
   </section>
   <!-- end contact section -->
+</form>
 </body>
 
 </html>

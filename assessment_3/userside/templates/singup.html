@@ -12,12 +12,18 @@
   <section class="contact_section layout_padding-bottom">
     <div class="container">
       <div class="heading_container">
-        <div style="margin-top: 50px;"><h2>Sing up</h2></div>
+        <div style="margin-top: 50px;"><h2>
+                Sing <span>Up</span>
+              </h2></div>
       </div>
       <div class="row">
         <div class="col-md-7">
           <div class="form_container">
-            <form action="">
+            {% if msg %}
+              <b style=" color: darkred;">{{msg}}</b>
+            {% endif %}
+            <form action="{% url 'singup' %}" method="POST" name="singup" enctype="multipart/form-data">
+              {% csrf_token %}
               <div>
                 <input type="text" name="fname" placeholder="First Name" />
               </div>
@@ -31,7 +37,7 @@
                 <input type="text" name="gender" placeholder="Gender" />
               </div>
               <div>
-                <input type="text" class="message-box" placeholder="Address" />
+                <input type="text" name="address" class="message-box" placeholder="Address" />
               </div>
               <div>
                 <input type="email" name="email" placeholder="Email" />
@@ -41,6 +47,9 @@
               </div>
               <div>
                 <input type="password" name="cpassword" placeholder="Comfirm Password" />
+              </div>
+              <div>
+                <input type="file" name="profile_pic">
               </div>
               <div class="btn_box">
                 <button>

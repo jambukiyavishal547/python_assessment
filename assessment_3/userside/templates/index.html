@@ -17,11 +17,6 @@
               <div class="row">
                 <div class="col-md-6">
                   <div class="detail-box">
-                    <div class="play_btn">
-                      <button>
-                        <i class="fa fa-play" aria-hidden="true"></i>
-                      </button>
-                    </div>
                     <h1>
                       Mico <br>
                       <span>
@@ -29,9 +24,9 @@
                       </span>
                     </h1>
                     <p>
-                      when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to
+                      Miro Hospital Is Care All Of The Patient To Start Treatment Than Recover Proper Human. All Patient Handeled By Experienced Doctors. 
                     </p>
-                    <a href="">
+                    <a href="{% url 'contact' %}">
                       Contact Us
                     </a>
                   </div>
@@ -49,28 +44,20 @@
               <div class="row">
                 <div class="col-md-6">
                   <div class="detail-box">
-                    <div class="play_btn">
-                      <button>
-                        <i class="fa fa-play" aria-hidden="true"></i>
-                      </button>
-                    </div>
-                    <h1>
-                      Mico <br>
-                      <span>
-                        Hospital
-                      </span>
+                    <h1>Mico <br>
+                      <span>Hospital</span>
                     </h1>
                     <p>
-                      when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to
+                      Miro Hospital Is Care All Of The Patient To Start Treatment Than Recover Proper Human. All Patient Handeled By Experienced Doctors. 
                     </p>
-                    <a href="">
+                    <a href="{% url 'contact' %}">
                       Contact Us
                     </a>
                   </div>
                 </div>
                 <div class="col-md-6">
                   <div class="img-box">
-                    <img src="{% static 'images/slider-img.jpg' %}" alt="">
+                    <img src="{% static 'images/about-img.jpg' %}" alt="">
                   </div>
                 </div>
               </div>
@@ -81,11 +68,6 @@
               <div class="row">
                 <div class="col-md-6">
                   <div class="detail-box">
-                    <div class="play_btn">
-                      <button>
-                        <i class="fa fa-play" aria-hidden="true"></i>
-                      </button>
-                    </div>
                     <h1>
                       Mico <br>
                       <span>
@@ -93,16 +75,16 @@
                       </span>
                     </h1>
                     <p>
-                      when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to
+                      Miro Hospital Is Care All Of The Patient To Start Treatment Than Recover Proper Human. All Patient Handeled By Experienced Doctors. 
                     </p>
-                    <a href="">
+                    <a href="{% url 'contact' %}">
                       Contact Us
                     </a>
                   </div>
                 </div>
                 <div class="col-md-6">
                   <div class="img-box">
-                    <img src="{% static 'images/slider-img.jpg' %}" alt="">
+                    <img src="{% static 'images/contact-img.jpg' %}" alt="">
                   </div>
                 </div>
               </div>
@@ -124,45 +106,35 @@
     </section>
     <!-- end slider section -->
   </div>
-
-
   <!-- book section -->
 
   <section class="book_section layout_padding">
     <div class="container">
       <div class="row">
         <div class="col">
-          <form>
+          <form method="POST">
             <h4>
               BOOK <span>APPOINTMENT</span>
             </h4>
             <div class="form-row ">
               <div class="form-group col-lg-4">
                 <label for="inputPatientName">Patient Name </label>
-                <input type="text" class="form-control">
+                <input type="text" class="form-control" name="pname">
               </div>
               <div class="form-group col-lg-4">
                 <label for="inputPatientName">Doctor Name </label>
-                <input type="text" class="form-control" >
-              </div>
-              <div class="form-group col-lg-4">
-                <label for="inputPatientName">Department Name </label>
-                <input type="text" class="form-control">
+                <input type="text" class="form-control" name="dname">
               </div>
             </div>
             <div class="form-row ">
               <div class="form-group col-lg-4">
                 <label for="inputPhone">Phone Number</label>
-                <input type="number" class="form-control" id="inputPhone" placeholder="XXXXXXXXXX">
-              </div>
-              <div class="form-group col-lg-4">
-                <label for="inputSymptoms">Symptoms</label>
-                <input type="text" class="form-control" id="inputSymptoms" placeholder="">
+                <input type="number" class="form-control" name="mobile" id="inputPhone" placeholder="XXXXXXXXXX">
               </div>
               <div class="form-group col-lg-4">
                 <label for="inputDate">Choose Date </label>
                 <div class="input-group date" data-date-format="dd-mm-yyyy">
-                  <input type="date" class="form-control" >
+                  <input type="date" class="form-control" name="date">
                   </span>
                 </div>
               </div>
@@ -178,8 +150,143 @@
 
 
   <!-- end book section -->
-
-
+  <!-- Docture Team section  -->
+      <section class="team_section layout_padding">
+    <div class="container">
+      <div class="heading_container heading_center">
+        <h2>
+          Our <span>Doctors</span>
+        </h2>
+      </div>
+      <div class="carousel-wrap ">
+        <div class="">
+          <div class="item" align="center">
+            <div class="box" style="height: 450px; width: 400px;">
+              <div class="img-box"> 
+                <img src="{% static 'images/doctor_1.png' %}" alt=""  height="200px" width="200px" />
+              </div>
+              <div class="detail-box">
+                <h5>
+                  Dr Dhrumil Shah
+                </h5>
+                <h6>
+                  Neurology
+                </h6>
+                <h6>
+                  6 Year Experience 
+                </h6>
+                <h6>
+                  Fees 1200.00
+                </h6>
+                <h6>
+                  Mon - Thu - Sat
+                </h6>
+                <span>
+                  10:00 AM to 6:00 PM 
+                </span>
+                <div class="social_box">
+                  <a href="">
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                  </a>
+                  <a href="">
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                  </a>
+                  <a href="">
+                    <i class="fa fa-linkedin" aria-hidden="true"></i>
+                  </a>
+                  <a href="">
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item" align="center" style="margin-top: 30px">
+            <div class="box" style="height: 450px; width: 400px;">
+              <div class="img-box"> 
+                <img src="{% static 'images/doctor_2.png' %}" alt=""  height="200px" width="200px" />
+              </div>
+              <div class="detail-box">
+                <h5>
+                  Dr Samir Patel
+                </h5>
+                <h6>
+                  various 
+                </h6>
+                <h6>
+                  4 Year Experience 
+                </h6>
+                <h6>
+                  Fees ...
+                </h6>
+                <h6>
+                  Ratings
+                </h6>
+                <span>
+                  4.8  
+                </span>
+                <div class="social_box">
+                  <a href="">
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                  </a>
+                  <a href="">
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                  </a>
+                  <a href="">
+                    <i class="fa fa-linkedin" aria-hidden="true"></i>
+                  </a>
+                  <a href="">
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item" align="center" style="margin-top: 30px">
+            <div class="box" style="height: 450px; width: 400px;">
+              <div class="img-box"> 
+                <img src="{% static 'images/doctor_3.png' %}" alt=""  height="200px" width="200px" />
+              </div>
+              <div class="detail-box">
+                <h5>
+                  Dr Limesh Vyas
+                </h5>
+                <h6>
+                  Consultant Neurophysician
+                </h6>
+                <h6>
+                  10 Year Experience 
+                </h6>
+                <h6>
+                  Fees...
+                </h6>
+                <h6>
+                  Mon - Fri - Sat
+                </h6>
+                <span>
+                  09:00 AM to 1:00 PM 
+                </span>
+                <div class="social_box">
+                  <a href="">
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                  </a>
+                  <a href="">
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                  </a>
+                  <a href="">
+                    <i class="fa fa-linkedin" aria-hidden="true"></i>
+                  </a>
+                  <a href="">
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </section>
+  <!-- Docture Team section  -->
   <!-- about section -->
 
   <section class="about_section">
@@ -198,7 +305,7 @@
               </h2>
             </div>
             <p>
-              has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors
+              Miro Hospital Is Care All Of The Patient To Start Treatment Than Recover Proper Human. All Patient Handeled By Experienced Doctors. 
             </p>
             <a href="">
               Read More
