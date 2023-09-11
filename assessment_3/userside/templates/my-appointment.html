@@ -1,0 +1,62 @@
+{% extends 'header.html' %}
+{% load static %}
+{% block content %}
+<html>
+<head>
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 80%;
+      margin: auto;
+    }
+
+    th, td {
+      
+      padding: 10px;
+      text-align: left;
+    }
+
+    th {
+      background-color: ;
+      color: black;
+    }
+  </style>
+</head>
+<body>
+  <form method="POST" name="my-appointment" action="{% url 'my-appointment'%}"
+       enctype="multipart/form-data">
+  <h3>Patients List</h3>
+  <table>
+    <thead>
+      <tr>
+      	<th>Media</th>
+        <th>Patient ID</th>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Address</th>
+        <th>Number</th>
+        <th>Last Visit</th>
+        <th>Status</th>
+      </tr>
+    </thead>
+    {% for i in appointments %}
+    <tbody>
+          <tr>
+          <td> </td>
+          <td> {{i.pk}} </td>
+          <td> {{i.pname}} </td>
+          <td> </td>
+          <td> </td>
+          <td> {{i.mobile}}</td>
+          <td> </td>
+          <td> </td>
+          </tr>
+    </tbody>
+    {% endfor %}
+  </table>
+</form>
+</body>
+</html>
+
+
+{% endblock %}
